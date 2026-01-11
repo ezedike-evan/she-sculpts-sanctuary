@@ -1,36 +1,39 @@
 import '../css/aboutme.css'
 
-const AboutMeDesktop = ()=>{
-    return(
+const AboutMeDesktop = () => {
+    return (
         <div className='about-me-container'>
-            <img src='/me.jpg' alt='image of me' />
-            <div>
-                <h3>About me</h3>
-                <h6>Welcome to she sculpts sanctuary</h6>
+            <div className="about-image-wrapper">
+                <img src='/me.jpg' alt="Michelle L'enchengo" />
+            </div>
+            <div className="about-content">
+                <h3 className="section-title-small">About Me</h3>
+                <h6 className="about-subtitle">Welcome to She Sculpts Sanctuary</h6>
+
+                <h4 className="about-heading">Your Partner for Fitness Success</h4>
                 <p>
-                    {`Your Partner for Fitness Success
-                    Greetings! I'm here to guide you through your fitness adventure. With a fervor for wellness, 
-                    I'm committed to helping you reach your goals.
-                    My own fitness journey began with a spark.Now, 
-                    I'm dedicated to helping you ignite that same fire within yourself.`}
+                    Hello! I'm here to guide you through your fitness adventure. With a deep passion for wellness,
+                    I'm committed to helping you reach your goals. My own fitness journey began with a spark,
+                    and now I'm dedicated to helping you ignite that same fire within yourself.
                 </p>
-                <span>What I Offer</span>
+
+                <h4 className="about-heading">What I Offer</h4>
                 <p>
-                    {`I specialize in creating tailored fitness plans that suit your lifestyle and goals. 
-                    Whether you're looking to build strength, lose weight, or boost your energy, 
-                    together we'll craft a plan that works for you.`}
+                    I specialize in creating tailored fitness plans that suit your unique lifestyle.
+                    Whether you're looking to build strength, lose weight, or boost your energy,
+                    together we'll craft a plan that works for you.
                 </p>
-                <span>Why Choose Me?</span>
+
+                <h4 className="about-heading">Why Choose Me?</h4>
                 <p>
-                    {` I bring expertise to every session. But beyond that, I'm your biggest supporter, 
-                    here to celebrate milestones and conquer challenges together `}
+                    I bring expertise to every session, but beyond that, I'm your biggest supporter.
+                    I'm here to celebrate every milestone and help you conquer every challenge.
                 </p>
-                <span>Get in Touch</span>
-                <p>
-                    {`Let's connect and discuss your goals. 
-                    I'm excited to be a part of your journey towards a healthier, happier you.
-                    To your health, Michelle L'enchengo`}
-                </p>
+
+                <div className="about-signature">
+                    <p>To your health,</p>
+                    <span className="signature">Michelle L'enchengo</span>
+                </div>
             </div>
         </div>
     )

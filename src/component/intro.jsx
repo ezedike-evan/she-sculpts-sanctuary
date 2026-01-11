@@ -1,18 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import '../css/intro.css'
-const Intro =()=>{
-    return(
+const Intro = () => {
+    return (
         <section className='intro-container'>
             <div className='intro-inner-container'>
-                <h2>
-                    let's get <br/>
-                    moving
-                </h2>
-                {/* <sub>for fitness is an art</sub> */}
-                <p>michelle l'enchengo - online fitness coach</p>
+                <h1>
+                    SCULPT YOUR <br />
+                    <span className="highlight-text">SANCTUARY</span>
+                </h1>
+                <p className="intro-subtitle">
+                    Transform your body and mind with personalized online coaching.
+                    Finding strength, balance, and confidence starts here.
+                </p>
+                <p className="coach-name">Michelle L'enchengo — Your Online Fitness Coach</p>
                 <div className='intro-btn'>
-                    <button>Get started</button>
-                    <a href="#workout"><button>book now</button></a> 
+                    <button className="primary-btn">Get Started</button>
+                    <a href="#workout"><button className="secondary-btn">View Programs</button></a>
                 </div>
             </div>
         </section>

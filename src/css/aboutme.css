@@ -1,94 +1,94 @@
-.about-me-container{
+.about-me-container {
     display: flex;
     align-items: center;
-    width: 100vw;
-    background-color: black;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 80px 40px;
+    background-color: var(--bg-dark);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.about-me-container img{
-    width: 50%;
+
+.about-image-wrapper {
+    flex: 1;
+    max-width: 450px;
 }
-.about-me-container > div{
-    padding: 0 35px;
-    width: 50%;
-    word-spacing: 2px;
+
+.about-image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -15px 15px 0 var(--primary-color);
+    transition: transform 0.3s ease;
 }
-.about-me-container > div h3{
+
+.about-image-wrapper img:hover {
+    transform: scale(1.02);
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.section-title-small {
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 15px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-.about-me-container > div h6{
-    letter-spacing: 1px;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.about-me-container > div p{
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-.about-me-container > div span{
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: red;
-    font-weight: 600;
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-@media (max-width:780px) {
-    .about-me-container{
+.about-subtitle {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.about-heading {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: 25px 0 10px;
+    font-weight: 500;
+}
+
+.about-content p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.about-signature {
+    margin-top: 30px;
+}
+
+.signature {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 999px) {
+    .about-me-container {
         flex-direction: column;
-        padding:20px;
-        background-color: black;
-    }
-    .about-me-container img{
-        width: 100%;
-    }
-    .about-me-container > div{
-        padding: 0 5px;
         text-align: center;
-        width: 100%;
-        margin-top: 20px;
-        word-spacing: 1px;
+        padding: 60px 20px;
     }
-    .about-me-container > h3{
-        letter-spacing: 2px;
-        font-size: 15px;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-    }
-    .about-me-container > h6{
-        letter-spacing: 1px;
-        font-size: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
-    .about-me-container > div p{
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-    .about-me-container > div span{
-        letter-spacing: 1px;
-        font-size: 15px;
-        color: red;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }    
-}
 
-@media (max-width:430px) {
-    .about-me-container > h3{
-        font-size: 13px;
+    .about-content {
+        text-align: center;
     }
-    .about-me-container > h6{
-        font-size: 18px;
+
+    .about-image-wrapper {
+        margin: 20px 0 40px;
+        width: 100%;
     }
-    .about-me-container > div p{
-        font-size: 13px;
+
+    .about-image-wrapper img {
+        box-shadow: 0 10px 0 var(--primary-color);
     }
 }

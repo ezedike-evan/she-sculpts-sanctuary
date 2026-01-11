@@ -10,25 +10,32 @@ import Quote from './component/quote'
 import SuccessStories from './component/successStories'
 import WorkOut from './component/workout'
 
-const App = ()=>{
+const App = () => {
   return (
     <>
-    {
-      (window.innerWidth >= 1000) ? <NavBarDesktop /> : <NavBarMobile />
-    }
+      <div className="desktop-view">
+        <NavBarDesktop />
+      </div>
+      <div className="mobile-view">
+        <NavBarMobile />
+      </div>
+
       <Intro />
       <Quote />
-    {
-      (window.innerWidth >= 1000) ? <AboutMeDesktop /> : <AboutMeMobile />
-    }
-      <WorkOut />
-    {
-      (window.innerWidth <= 430) ? <h2 className='stories'>success stories</h2> : ''
-    }
-      <div id='end'></div>
-      <div id='stories-container'>
-        <SuccessStories />
+
+      <div id="about-me">
+        <div className="desktop-view">
+          <AboutMeDesktop />
+        </div>
+        <div className="mobile-view">
+          <AboutMeMobile />
+        </div>
       </div>
+
+      <WorkOut />
+
+      <SuccessStories />
+
       <ContactMe />
       <Footer />
     </>

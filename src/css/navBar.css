@@ -1,46 +1,82 @@
-nav{
+.navbar {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    left: 0;
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px 5px;
-    z-index: 2;
-}
-nav ul{
-    display: flex;
-}
-nav ul li{
-    margin: 0 10px;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-}
-nav ul li a{
-    color: white;
-    width: fit-content;
-    height: fit-content;
+    padding: 15px 50px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
 }
 
-nav ul li:hover{
-    cursor: pointer;
-    color: red;
+.nav-brand {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links li a {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+.nav-cta a {
+    padding: 10px 25px;
+    background: var(--primary-color);
+    color: #000 !important;
+    border-radius: 20px;
     font-weight: 700;
-    transform: scale(1.1);
+    transition: all 0.3s ease !important;
 }
-@media (max-width:780px) {
-    nav{
-        padding: 10px 25px 5px;
-    }
+
+.nav-cta a:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
 }
-@media (max-width:430px) {
-    nav{
-        padding: 10px 15px 5px;
-    }
-    nav ul li a svg{
-        width: 20px;
-        height: 20px;
+
+/* Mobile Nav Specifics */
+.mobile-nav {
+    padding: 15px 20px;
+}
+
+.mobile-nav .nav-links {
+    gap: 20px;
+}
+
+.mobile-nav .nav-links li a svg {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.mobile-nav .nav-links li a:hover svg {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 25px;
     }
 }

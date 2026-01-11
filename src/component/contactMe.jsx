@@ -1,48 +1,47 @@
 /* eslint-disable react/no-unescaped-entities */
 import '../css/contactMe.css'
-import {LiaFacebookF, LiaTwitter, LiaInstagram, LiaLinkedinIn} from 'react-icons/lia'
-const ContactMe = ()=>{
-    return(
-        <section id="third-section">
-            <div id='st-part'>
-                <h2>michelle l'enchengo</h2>
-                <h4>fitness coach</h4>
-                <p>
-                    50 prince francine street <br />
-                    chicago, CA 94158
-                </p>
-                <p>Tel : +234-706-677-0242</p>
-                <p>mr.morningsta6@gmail.com</p>
-                <div className='socials'>
-                    <a href=""><LiaFacebookF /></a>
-                    <a href=""><LiaTwitter /></a>
-                    <a href=""><LiaInstagram /></a>
-                    <a href=""><LiaLinkedinIn /></a>
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'
+const ContactMe = () => {
+    return (
+        <section id="contact" className="contact-container">
+            <div className="contact-info">
+                <h3>Michelle L'enchengo</h3>
+                <h4>Expert Fitness Coach</h4>
+                <div className="contact-details">
+                    <p>Online Coaching / Global</p>
+                    <p>contact@shesculptssanctuary.com</p>
+                </div>
+                <div className='socials-contact'>
+                    <a href="#" aria-label="Facebook"><FaFacebookF /></a>
+                    <a href="#" aria-label="Twitter"><FaTwitter /></a>
+                    <a href="#" aria-label="Instagram"><FaInstagram /></a>
                 </div>
             </div>
-            <div id="sent-email">
-                <h2>GET IN TOUCH</h2>
-                <div>
-                    <label htmlFor="firstname">First Name *</label>
-                    <input type="text" />
-                </div>
-                <div>
-                    <label htmlFor="lastname">Last Name *</label>
-                    <input type="text" />
-                </div>
-                <div>
-                    <label htmlFor="address">Email *</label>
-                    <input type="text" />
-                </div>
-                <div>
-                    <label htmlFor="email">Phone</label>
-                    <input type="text" />
-                </div>
-                <div>
-                    <label htmlFor="message">Message</label>
-                    <textarea placeholder='Message'></textarea>
-                </div>
-                <button>Sumbit</button>
+            <div className="contact-form-wrapper">
+                <h3>Get In Touch</h3>
+                <form className="contact-form">
+                    <div className="form-group">
+                        <label htmlFor="firstname">First Name *</label>
+                        <input type="text" id="firstname" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="lastname">Last Name *</label>
+                        <input type="text" id="lastname" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email">Email *</label>
+                        <input type="email" id="email" required />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="phone">Phone</label>
+                        <input type="tel" id="phone" />
+                    </div>
+                    <div className="form-group full-width">
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" placeholder='How can I help you?' rows="4"></textarea>
+                    </div>
+                    <button type="submit" className="submit-btn">Submit</button>
+                </form>
             </div>
         </section>
     )
