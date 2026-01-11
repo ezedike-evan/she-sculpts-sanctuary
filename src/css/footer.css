@@ -19,7 +19,9 @@
 
 .footer-brand {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
+    /* Reduced min-width */
+    width: 100%;
 }
 
 .footer-brand h3 {
@@ -76,5 +78,17 @@
     .footer-bottom {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-content {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .footer-brand,
+    .footer-socials {
+        min-width: 100%;
     }
 }

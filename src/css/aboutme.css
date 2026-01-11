@@ -4,14 +4,17 @@
     justify-content: center;
     padding: 80px 40px;
     background-color: var(--bg-dark);
-    gap: 60px;
+    gap: 40px;
+    /* Reduced from 60px */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about-image-wrapper {
-    flex: 1;
-    max-width: 450px;
+    flex: 1.3;
+    /* Increased from 1 to give image more space */
+    max-width: 600px;
+    /* Increased from 450px */
 }
 
 .about-image-wrapper img {
